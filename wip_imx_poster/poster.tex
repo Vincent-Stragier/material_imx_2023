@@ -85,9 +85,9 @@
     \begin{column}{\colwidth}
 
       \begin{block}{Motivation}
-        In Belgium, at least 1~\% of the population suffers from visual impairment and about 0.1~\% is legally blind. These numbers are expected to raise due to the ageing of the population.
+        In Belgium, at least 1~\% of the population suffers from visual impairment and about 0.1~\% is legally blind\cite{CeciteDeficienceVisuelle2023, naczykEqla2020}. These numbers are expected to raise due to the ageing of the population.
 
-        Therefore, it is important to develop new assistive tools to help these people in their daily life. Existing tools are often expensive and not always user-friendly. Better solutions like the Be My Eyes\cite{IntroducingOurVirtual2023} app exist, but they are not always adapted to the needs of the users (resource intensive, no offline mode). For intense, the Virtual Volonteer of Be My Eyes is using GPT-4\cite{GPT42023}, which is a very resource intensive system.
+        Therefore, it is important to develop new assistive tools to help these people in their daily life. Existing tools are often expensive and not always user-friendly. Better solutions like the Be My Eyes\cite{IntroducingOurVirtual2023} app exist, but they are not always adapted to the needs of the users (resource intensive, no offline mode). For intense, the Virtual Volunteer of Be My Eyes is using GPT-4\cite{GPT42023}, which is a very resource intensive system.
 
         In this context, we propose to develop an interactive agent using a hybrid and multimodal approach.
       \end{block}
@@ -95,7 +95,7 @@
       \begin{block}{A modular approach}
         One of the goal of this project is to be able to implement assistive tools as modules in the systems. Through discussion with experts and users, a set of potential modules has been identified.
 
-        The modules to implement are: face recognition, age and sex recognition, emotion recognition, color recognition, optical character recognition (OCR), money recognition, environment recognition, object recognition, navigation.
+        The modules to implement are: face recognition, age and sex recognition, emotion recognition, color recognition, optical character recognition (OCR), money recognition, environment recognition, object recognition, navigation (GPS).
       \end{block}
 
       \begin{alertblock}{Generic architecture of an interactive agent}
@@ -122,7 +122,7 @@
 
         We propose to build a system that combine both classic NLP techniques to handle the typical user request and a fallback system based on a large language model to handle the more exotic requests.
 
-        At the moment, we are developing a web application in order to test this system.
+        At the moment, we are implementing a web application in order to test this system.
         \begin{figure}[ht]
           \centering
           \includegraphics[width=0.5\linewidth]{figures/schematics-interactive_agent.drawio.pdf}
